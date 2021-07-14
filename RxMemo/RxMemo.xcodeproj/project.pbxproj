@@ -14,6 +14,8 @@
 		65DD9A12269E7EFA00FD6D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DD9A11269E7EFA00FD6D73 /* Assets.xcassets */; };
 		65DD9A15269E7EFA00FD6D73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DD9A13269E7EFA00FD6D73 /* LaunchScreen.storyboard */; };
 		65DD9A22269E857600FD6D73 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A21269E857600FD6D73 /* Memo.swift */; };
+		65DD9A24269E89D800FD6D73 /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A23269E89D800FD6D73 /* MemoStorageType.swift */; };
+		65DD9A29269E8C3500FD6D73 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A28269E8C3500FD6D73 /* MemoryStorage.swift */; };
 		97789D195646647D787082DE /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E8A3A36D014F33DC99C6E0 /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		65DD9A14269E7EFA00FD6D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65DD9A16269E7EFA00FD6D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DD9A21269E857600FD6D73 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		65DD9A23269E89D800FD6D73 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		65DD9A28269E8C3500FD6D73 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
 		68E8A3A36D014F33DC99C6E0 /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,7 +95,6 @@
 				65DD9A07269E7EF900FD6D73 /* SceneDelegate.swift */,
 				65DD9A11269E7EFA00FD6D73 /* Assets.xcassets */,
 				65DD9A16269E7EFA00FD6D73 /* Info.plist */,
-				65DD9A0E269E7EF900FD6D73 /* RxMemo.xcdatamodeld */,
 			);
 			path = RxMemo;
 			sourceTree = "<group>";
@@ -123,6 +126,9 @@
 		65DD9A1F269E843300FD6D73 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				65DD9A27269E8BEA00FD6D73 /* CoreDataStorage */,
+				65DD9A26269E8BD300FD6D73 /* MemoryStorage */,
+				65DD9A23269E89D800FD6D73 /* MemoStorageType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -132,6 +138,22 @@
 			children = (
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		65DD9A26269E8BD300FD6D73 /* MemoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				65DD9A28269E8C3500FD6D73 /* MemoryStorage.swift */,
+			);
+			path = MemoryStorage;
+			sourceTree = "<group>";
+		};
+		65DD9A27269E8BEA00FD6D73 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				65DD9A0E269E7EF900FD6D73 /* RxMemo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DD9A29269E8C3500FD6D73 /* MemoryStorage.swift in Sources */,
 				65DD9A06269E7EF900FD6D73 /* AppDelegate.swift in Sources */,
+				65DD9A24269E89D800FD6D73 /* MemoStorageType.swift in Sources */,
 				65DD9A08269E7EF900FD6D73 /* SceneDelegate.swift in Sources */,
 				65DD9A10269E7EF900FD6D73 /* RxMemo.xcdatamodeld in Sources */,
 				65DD9A22269E857600FD6D73 /* Memo.swift in Sources */,
