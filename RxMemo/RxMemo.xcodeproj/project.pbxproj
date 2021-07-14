@@ -23,6 +23,10 @@
 		65DD9A33269EAAE200FD6D73 /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A32269EAAE200FD6D73 /* MemoDetailViewModel.swift */; };
 		65DD9A35269EAB1D00FD6D73 /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A34269EAB1D00FD6D73 /* MemoComposeViewModel.swift */; };
 		65DD9A37269EAB8000FD6D73 /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A36269EAB8000FD6D73 /* ViewModelBindableType.swift */; };
+		65DD9A39269EB02900FD6D73 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A38269EB02900FD6D73 /* TransitionModel.swift */; };
+		65DD9A3B269EB12400FD6D73 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A3A269EB12400FD6D73 /* Scene.swift */; };
+		65DD9A3D269EC64400FD6D73 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A3C269EC64400FD6D73 /* SceneCoordinatorType.swift */; };
+		65DD9A3F269EC73E00FD6D73 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A3E269EC73E00FD6D73 /* SceneCoordinator.swift */; };
 		97789D195646647D787082DE /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E8A3A36D014F33DC99C6E0 /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		65DD9A32269EAAE200FD6D73 /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
 		65DD9A34269EAB1D00FD6D73 /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
 		65DD9A36269EAB8000FD6D73 /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
+		65DD9A38269EB02900FD6D73 /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		65DD9A3A269EB12400FD6D73 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		65DD9A3C269EC64400FD6D73 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		65DD9A3E269EC73E00FD6D73 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		68E8A3A36D014F33DC99C6E0 /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +165,10 @@
 		65DD9A20269E846600FD6D73 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				65DD9A38269EB02900FD6D73 /* TransitionModel.swift */,
+				65DD9A3A269EB12400FD6D73 /* Scene.swift */,
+				65DD9A3C269EC64400FD6D73 /* SceneCoordinatorType.swift */,
+				65DD9A3E269EC73E00FD6D73 /* SceneCoordinator.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -293,14 +305,18 @@
 			files = (
 				65DD9A29269E8C3500FD6D73 /* MemoryStorage.swift in Sources */,
 				65DD9A35269EAB1D00FD6D73 /* MemoComposeViewModel.swift in Sources */,
+				65DD9A3F269EC73E00FD6D73 /* SceneCoordinator.swift in Sources */,
+				65DD9A3B269EB12400FD6D73 /* Scene.swift in Sources */,
 				65DD9A2D269EA8B300FD6D73 /* MemoDetailViewController.swift in Sources */,
 				65DD9A37269EAB8000FD6D73 /* ViewModelBindableType.swift in Sources */,
 				65DD9A06269E7EF900FD6D73 /* AppDelegate.swift in Sources */,
 				65DD9A24269E89D800FD6D73 /* MemoStorageType.swift in Sources */,
 				65DD9A08269E7EF900FD6D73 /* SceneDelegate.swift in Sources */,
 				65DD9A10269E7EF900FD6D73 /* RxMemo.xcdatamodeld in Sources */,
+				65DD9A3D269EC64400FD6D73 /* SceneCoordinatorType.swift in Sources */,
 				65DD9A31269EAAA100FD6D73 /* MemoListViewModel.swift in Sources */,
 				65DD9A33269EAAE200FD6D73 /* MemoDetailViewModel.swift in Sources */,
+				65DD9A39269EB02900FD6D73 /* TransitionModel.swift in Sources */,
 				65DD9A2B269EA87000FD6D73 /* MemoListViewController.swift in Sources */,
 				65DD9A2F269EA93400FD6D73 /* MemoComposeViewController.swift in Sources */,
 				65DD9A22269E857600FD6D73 /* Memo.swift in Sources */,
