@@ -30,15 +30,43 @@
                     <view key="view" contentMode="scaleToFill" id="XgX-h5-hJ2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ghK-RT-6y7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="hgp-gl-YiD">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hgp-gl-YiD" id="bdw-lh-CDq">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2g3-31-75q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ghK-RT-6y7" firstAttribute="trailing" secondItem="2g3-31-75q" secondAttribute="trailing" id="ZO4-Jn-6qg"/>
+                            <constraint firstItem="ghK-RT-6y7" firstAttribute="top" secondItem="XgX-h5-hJ2" secondAttribute="top" id="jjc-4d-vec"/>
+                            <constraint firstItem="ghK-RT-6y7" firstAttribute="leading" secondItem="2g3-31-75q" secondAttribute="leading" id="jzS-Mr-zAb"/>
+                            <constraint firstAttribute="bottom" secondItem="ghK-RT-6y7" secondAttribute="bottom" id="rr0-7g-7lz"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="메모 목록" id="6NI-cr-ySi"/>
+                    <navigationItem key="navigationItem" title="메모 목록" id="6NI-cr-ySi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="phW-vL-YMJ"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="phW-vL-YMJ" id="B1j-lz-AkV"/>
+                        <outlet property="listTableView" destination="ghK-RT-6y7" id="jDy-CA-MtI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BM-kR-BU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="88"/>
+            <point key="canvasLocation" x="1685.5072463768117" y="87.723214285714278"/>
         </scene>
         <!--새 메모-->
         <scene sceneID="5GA-OG-XvU">
