@@ -75,15 +75,38 @@
                     <view key="view" contentMode="scaleToFill" id="hT4-H2-job">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QsC-s6-QjX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QbW-RG-9nN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QsC-s6-QjX" secondAttribute="bottom" id="RMx-jW-pLl"/>
+                            <constraint firstItem="QsC-s6-QjX" firstAttribute="leading" secondItem="QbW-RG-9nN" secondAttribute="leading" id="RpT-ya-gNb"/>
+                            <constraint firstItem="QsC-s6-QjX" firstAttribute="trailing" secondItem="QbW-RG-9nN" secondAttribute="trailing" id="VeM-dj-qQR"/>
+                            <constraint firstItem="QsC-s6-QjX" firstAttribute="top" secondItem="hT4-H2-job" secondAttribute="top" id="pmR-r7-VB3"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="07q-c5-Uf6"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="07q-c5-Uf6">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="39f-Kb-GY8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hl5-Fp-kZ6"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="39f-Kb-GY8" id="0ot-bn-uu0"/>
+                        <outlet property="contentTextView" destination="QsC-s6-QjX" id="rGw-xd-h5z"/>
+                        <outlet property="saveButton" destination="Hl5-Fp-kZ6" id="yvB-sb-MBS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKF-Hy-lTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="792"/>
+            <point key="canvasLocation" x="1685.5072463768117" y="791.51785714285711"/>
         </scene>
         <!--메모 보기-->
         <scene sceneID="xYI-VU-4U3">
@@ -140,6 +163,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

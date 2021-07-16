@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 
 class SceneCoordinator: SceneCoordinatorType {
+
     private let bag = DisposeBag()
 
     private var window: UIWindow
@@ -51,7 +52,7 @@ class SceneCoordinator: SceneCoordinatorType {
     }
 
     @discardableResult
-    func delete(animated: Bool) -> Completable {
+    func close(animated: Bool) -> Completable {
         return Completable.create { [unowned self] completable in
             if let presentingVC = self.currentVC.presentingViewController {
                 self.currentVC.dismiss(animated: animated) {
