@@ -20,4 +20,4 @@ class Coordinator {
         window.rootViewController = navigationRootViewController
         window.makeKeyAndVisible()
     }
-}+
+}
