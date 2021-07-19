@@ -15,6 +15,7 @@
 		65DD9A9026A5592200FD6D73 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A8F26A5592200FD6D73 /* RootViewController.swift */; };
 		65DD9A9226A5598900FD6D73 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9126A5598900FD6D73 /* Coordinator.swift */; };
 		65DD9A9526A55C8C00FD6D73 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9426A55C8C00FD6D73 /* Article.swift */; };
+		65DD9A9826A55D7900FD6D73 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9726A55D7900FD6D73 /* ArticleService.swift */; };
 		9547F3D3CDF6BD3EB98D89F5 /* Pods_MVVMRxSwiftTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8A1859BC43CD7EC573098C /* Pods_MVVMRxSwiftTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		65DD9A8F26A5592200FD6D73 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		65DD9A9126A5598900FD6D73 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		65DD9A9426A55C8C00FD6D73 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		65DD9A9726A55D7900FD6D73 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		8DC0384DE7186BF067990C41 /* Pods-MVVMRxSwiftTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTutorial.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTutorial/Pods-MVVMRxSwiftTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		AB8A1859BC43CD7EC573098C /* Pods_MVVMRxSwiftTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwiftTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD4C16E8577CCBB3878E0A2 /* Pods-MVVMRxSwiftTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTutorial.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTutorial/Pods-MVVMRxSwiftTutorial.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +78,8 @@
 		65DD9A7626A5583200FD6D73 /* MVVMRxSwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				65DD9A9326A55C7A00FD6D73 /* Model */,
+				65DD9A9626A55D5A00FD6D73 /* Services */,
+				65DD9A9326A55C7A00FD6D73 /* Models */,
 				65DD9A8E26A5590800FD6D73 /* Controllers */,
 				65DD9A9126A5598900FD6D73 /* Coordinator.swift */,
 				65DD9A7726A5583200FD6D73 /* AppDelegate.swift */,
@@ -97,12 +100,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		65DD9A9326A55C7A00FD6D73 /* Model */ = {
+		65DD9A9326A55C7A00FD6D73 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				65DD9A9426A55C8C00FD6D73 /* Article.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65DD9A9626A55D5A00FD6D73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65DD9A9726A55D7900FD6D73 /* ArticleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		ACFE15FE0FF12E6B2BB073DE /* Frameworks */ = {
@@ -229,6 +240,7 @@
 				65DD9A7826A5583200FD6D73 /* AppDelegate.swift in Sources */,
 				65DD9A8226A5583200FD6D73 /* MVVMRxSwiftTutorial.xcdatamodeld in Sources */,
 				65DD9A9526A55C8C00FD6D73 /* Article.swift in Sources */,
+				65DD9A9826A55D7900FD6D73 /* ArticleService.swift in Sources */,
 				65DD9A9226A5598900FD6D73 /* Coordinator.swift in Sources */,
 				65DD9A9026A5592200FD6D73 /* RootViewController.swift in Sources */,
 				65DD9A7A26A5583200FD6D73 /* SceneDelegate.swift in Sources */,
