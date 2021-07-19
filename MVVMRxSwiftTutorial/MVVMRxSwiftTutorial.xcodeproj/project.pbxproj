@@ -18,6 +18,7 @@
 		65DD9A9826A55D7900FD6D73 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9726A55D7900FD6D73 /* ArticleService.swift */; };
 		65DD9A9B26A5661300FD6D73 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9A26A5661300FD6D73 /* RootViewModel.swift */; };
 		65DD9A9D26A571DB00FD6D73 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9C26A571DB00FD6D73 /* ArticleViewModel.swift */; };
+		65DD9AA026A5779900FD6D73 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9A9F26A5779900FD6D73 /* ArticleCollectionViewCell.swift */; };
 		9547F3D3CDF6BD3EB98D89F5 /* Pods_MVVMRxSwiftTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8A1859BC43CD7EC573098C /* Pods_MVVMRxSwiftTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		65DD9A9726A55D7900FD6D73 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		65DD9A9A26A5661300FD6D73 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		65DD9A9C26A571DB00FD6D73 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		65DD9A9F26A5779900FD6D73 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DC0384DE7186BF067990C41 /* Pods-MVVMRxSwiftTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTutorial.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTutorial/Pods-MVVMRxSwiftTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		AB8A1859BC43CD7EC573098C /* Pods_MVVMRxSwiftTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwiftTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD4C16E8577CCBB3878E0A2 /* Pods-MVVMRxSwiftTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftTutorial.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftTutorial/Pods-MVVMRxSwiftTutorial.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,17 +84,18 @@
 		65DD9A7626A5583200FD6D73 /* MVVMRxSwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				65DD9A9926A565FD00FD6D73 /* ViewModels */,
-				65DD9A9626A55D5A00FD6D73 /* Services */,
-				65DD9A9326A55C7A00FD6D73 /* Models */,
+				65DD9A9E26A5776A00FD6D73 /* Views */,
+				65DD9A7726A5583200FD6D73 /* AppDelegate.swift */,
+				65DD9A8326A5583300FD6D73 /* Assets.xcassets */,
 				65DD9A8E26A5590800FD6D73 /* Controllers */,
 				65DD9A9126A5598900FD6D73 /* Coordinator.swift */,
-				65DD9A7726A5583200FD6D73 /* AppDelegate.swift */,
-				65DD9A7926A5583200FD6D73 /* SceneDelegate.swift */,
-				65DD9A8326A5583300FD6D73 /* Assets.xcassets */,
-				65DD9A8526A5583300FD6D73 /* LaunchScreen.storyboard */,
 				65DD9A8826A5583300FD6D73 /* Info.plist */,
+				65DD9A8526A5583300FD6D73 /* LaunchScreen.storyboard */,
+				65DD9A9326A55C7A00FD6D73 /* Models */,
 				65DD9A8026A5583200FD6D73 /* MVVMRxSwiftTutorial.xcdatamodeld */,
+				65DD9A7926A5583200FD6D73 /* SceneDelegate.swift */,
+				65DD9A9626A55D5A00FD6D73 /* Services */,
+				65DD9A9926A565FD00FD6D73 /* ViewModels */,
 			);
 			path = MVVMRxSwiftTutorial;
 			sourceTree = "<group>";
@@ -128,6 +131,14 @@
 				65DD9A9C26A571DB00FD6D73 /* ArticleViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		65DD9A9E26A5776A00FD6D73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65DD9A9F26A5779900FD6D73 /* ArticleCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ACFE15FE0FF12E6B2BB073DE /* Frameworks */ = {
@@ -258,6 +269,7 @@
 				65DD9A9826A55D7900FD6D73 /* ArticleService.swift in Sources */,
 				65DD9A9226A5598900FD6D73 /* Coordinator.swift in Sources */,
 				65DD9A9D26A571DB00FD6D73 /* ArticleViewModel.swift in Sources */,
+				65DD9AA026A5779900FD6D73 /* ArticleCollectionViewCell.swift in Sources */,
 				65DD9A9026A5592200FD6D73 /* RootViewController.swift in Sources */,
 				65DD9A7A26A5583200FD6D73 /* SceneDelegate.swift in Sources */,
 			);
