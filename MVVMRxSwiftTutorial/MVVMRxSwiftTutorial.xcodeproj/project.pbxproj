@@ -85,17 +85,17 @@
 			isa = PBXGroup;
 			children = (
 				65DD9A9E26A5776A00FD6D73 /* Views */,
+				65DD9A9926A565FD00FD6D73 /* ViewModels */,
+				65DD9A8E26A5590800FD6D73 /* Controllers */,
+				65DD9A9326A55C7A00FD6D73 /* Models */,
+				65DD9A9626A55D5A00FD6D73 /* Services */,
 				65DD9A7726A5583200FD6D73 /* AppDelegate.swift */,
 				65DD9A8326A5583300FD6D73 /* Assets.xcassets */,
-				65DD9A8E26A5590800FD6D73 /* Controllers */,
 				65DD9A9126A5598900FD6D73 /* Coordinator.swift */,
 				65DD9A8826A5583300FD6D73 /* Info.plist */,
 				65DD9A8526A5583300FD6D73 /* LaunchScreen.storyboard */,
-				65DD9A9326A55C7A00FD6D73 /* Models */,
 				65DD9A8026A5583200FD6D73 /* MVVMRxSwiftTutorial.xcdatamodeld */,
 				65DD9A7926A5583200FD6D73 /* SceneDelegate.swift */,
-				65DD9A9626A55D5A00FD6D73 /* Services */,
-				65DD9A9926A565FD00FD6D73 /* ViewModels */,
 			);
 			path = MVVMRxSwiftTutorial;
 			sourceTree = "<group>";
