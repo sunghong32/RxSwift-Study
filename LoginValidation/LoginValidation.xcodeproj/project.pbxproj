@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		65DD9ABD26A6484100FD6D73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DD9ABB26A6484100FD6D73 /* LaunchScreen.storyboard */; };
 		65DD9AC626A648E600FD6D73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9AC526A648E600FD6D73 /* LoginViewController.swift */; };
 		65DD9AC826A6491E00FD6D73 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9AC726A6491E00FD6D73 /* Coordinator.swift */; };
+		65DD9ACB26A6605D00FD6D73 /* UiViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD9ACA26A6605D00FD6D73 /* UiViewController-Extension.swift */; };
 		E09181CBE78980A9F7E64B13 /* Pods_LoginValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD8B95671BDE661F3420CC /* Pods_LoginValidation.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		65DD9ABE26A6484100FD6D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DD9AC526A648E600FD6D73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65DD9AC726A6491E00FD6D73 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		65DD9ACA26A6605D00FD6D73 /* UiViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController-Extension.swift"; sourceTree = "<group>"; };
 		E48948959C84BA16610FAD1C /* Pods-LoginValidation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginValidation.release.xcconfig"; path = "Target Support Files/Pods-LoginValidation/Pods-LoginValidation.release.xcconfig"; sourceTree = "<group>"; };
 		EF689C213335AF9C8A417D91 /* Pods-LoginValidation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginValidation.debug.xcconfig"; path = "Target Support Files/Pods-LoginValidation/Pods-LoginValidation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 		65DD9AAC26A6483F00FD6D73 /* LoginValidation */ = {
 			isa = PBXGroup;
 			children = (
+				65DD9AC926A6604000FD6D73 /* Extensions */,
 				65DD9AC726A6491E00FD6D73 /* Coordinator.swift */,
 				65DD9AC426A648CC00FD6D73 /* Controllers */,
 				65DD9AAD26A6483F00FD6D73 /* AppDelegate.swift */,
@@ -85,6 +88,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		65DD9AC926A6604000FD6D73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65DD9ACA26A6605D00FD6D73 /* UiViewController-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9EB17E7E3401F964EC4F2098 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +110,6 @@
 				EF689C213335AF9C8A417D91 /* Pods-LoginValidation.debug.xcconfig */,
 				E48948959C84BA16610FAD1C /* Pods-LoginValidation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DD9ACB26A6605D00FD6D73 /* UiViewController-Extension.swift in Sources */,
 				65DD9AC626A648E600FD6D73 /* LoginViewController.swift in Sources */,
 				65DD9AB826A6483F00FD6D73 /* LoginValidation.xcdatamodeld in Sources */,
 				65DD9AC826A6491E00FD6D73 /* Coordinator.swift in Sources */,
