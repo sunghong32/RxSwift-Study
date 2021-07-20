@@ -8,10 +8,15 @@
 import UIKit
 import MaterialComponents.MaterialTextControls_OutlinedTextFields
 import MaterialComponents.MaterialButtons
+import RxSwift
+import RxCocoa
 
 class LoginViewController: UIViewController {
 
     // MARK: Properties
+    let viewModel = LoginViewModel()
+    let disposeBag = DisposeBag()
+
     private lazy var idTextField: MDCOutlinedTextField = {
         let textField = MDCOutlinedTextField()
         textField.label.text = "id"
@@ -56,6 +61,7 @@ class LoginViewController: UIViewController {
         
         configureUI()
         configureKeyboard()
+        loginBind()
     }
 
     // MARK: Configures
@@ -72,5 +78,24 @@ class LoginViewController: UIViewController {
         stack.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         stack.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         stack.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+    }
+
+    // MARK: Binds
+    func loginBind() {
+        self.idTextField.rx.text.map { $0 ?? "" }.bind(to: viewModel.idPublishSubject)
+            .disposed(by: disposeBag)
+        self.pwTextField.rx.text.map { $0 ?? "" }.bind(to: viewModel.pwPublishSubject)
+            .disposed(by: disposeBag)
+
+        viewModel.isValid()
+            .subscribe(onNext: { valid in
+                self.loginButton.isUserInteractionEnabled = valid
+                if valid {
+                    self.loginButton.alpha = 1
+                } else {
+                    self.loginButton.alpha = 0.3
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }
